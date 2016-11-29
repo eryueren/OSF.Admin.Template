@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Matrix Admin</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="css/fullcalendar.css" />
+	<link rel="stylesheet" href="css/matrix-style.css" />
+	<link rel="stylesheet" href="css/matrix-media.css" />
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/jquery.gritter.css" />
+	<link href='css/fonts.googleapis.com.css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!--Header-part-->
+	<div id="header">
+		<h1><a href="#">OSF管理后台</a></h1>
+	</div>
+	<!--close-Header-part--> 
+
+	<!--top-Header-menu-->
+	<div id="menu-nav" class="navbar navbar-inverse">
+		<ul class="nav">			
+			<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">网站设置</span></a></li>
+			<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">运营管理</span></a></li>
+			<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">商品管理</span></a></li>
+			<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">订单管理</span></a></li>
+			<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">CRM管理</span></a></li>
+			<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">BI统计</span></a></li>
+			<li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">配置中心</span></a></li>
+		</ul>
+	</div>
+	<!--close-top-Header-menu-->
+
+	<!--start-top-serch-->
+	<div id="user-nav" class="navbar navbar-inverse">
+		<ul class="nav">			
+			<li class=""><a title="" href="#"><i class="icon icon-user"></i> <span class="text">&nbsp; 欢迎您 - Chao.Wu &nbsp; </span></a></li>
+			<li class=""><a title="" href="#"><i class="icon icon-envelope"></i> <span class="text">&nbsp; 消息 &nbsp; </span></a></li>
+			<li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">&nbsp; 退出 &nbsp;</span></a></li>
+		</ul>
+	</div>
+	<!--close-top-serch-->
+
+	<!--sidebar-menu-->
+	 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> 基本设置</a>
+		<ul>
+		 <li class="active"><a href="#"><i class="icon icon-home"></i> <span>欢迎页面</span></a></li>
+			<li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>基本设置</span></a>
+				<ul>
+					<li><a href="#">站点设置</a></li>
+					<li><a href="#">商城设置</a></li>
+					<li><a href="#">邮件配置</a></li>
+					<li><a href="#">邮件模板</a></li>
+					<li><a href="#">友情链接</a></li>
+				</ul>
+			</li>
+			<li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>网站优化</span></a>
+				<ul>
+					<li><a href="#">SEO设置</a></li>
+					<li><a href="#">文章SEO</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!--sidebar-menu-->
+
+	<!--main-container-part-->
+	<div id="content">
+		<!--breadcrumbs-->
+		<div id="content-header">
+			<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a></div>
+		</div>
+		<!--End-breadcrumbs-->	
+
+		<!--Footer-part-->
+		<div class="row-fluid">
+			<div id="footer" class="span12"> 2016 &copy; Matrix Admin. Brought to you by <a href="#">Chao.Wu</a> </div>
+		</div>
+		<!--end-Footer-part-->
+	</div>
+ 			<script src="js/jquery.min.js"></script> 
+            <script src="js/jquery.ui.custom.js"></script> 
+            <script src="js/bootstrap.min.js"></script> 
+            <script src="js/jquery.flot.min.js"></script> 
+            <script src="js/jquery.flot.resize.min.js"></script> 
+            <script src="js/jquery.peity.min.js"></script> 
+            <script src="js/fullcalendar.min.js"></script> 
+            <script src="js/matrix.js"></script> 
+            <script src="js/matrix.dashboard.js"></script> 
+
+	<script type="text/javascript">
+  // This function is called from the pop-up menus to transfer to
+  // a different page. Ignore if the value returned is a null string:
+  function goPage (newURL) {
+
+      // if url is empty, skip the menu dividers and reset the menu selection to default
+      if (newURL != "") {
+
+          // if url is "-", it is this page -- reset the menu:
+          if (newURL == "-" ) {
+          	resetMenu();            
+          } 
+          // else, send page to designated URL            
+          else {  
+          	document.location.href = newURL;
+          }
+      }
+  }
+
+// resets the menu selection upon entry to this page:
+function resetMenu() {
+	document.gomenu.selector.selectedIndex = 2;
+}
+</script>
+</body>
+</html>

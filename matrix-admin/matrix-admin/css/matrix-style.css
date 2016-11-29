@@ -92,9 +92,9 @@ hr{ border-top-color:#dadada;}
 
 
 /* Top user navigation */
-#user-nav {	
+#user-nav {
 	position: absolute;
-	right: 10px;
+	left: 220px;
 	top:0px;
 	z-index: 20;
 	margin: 0;
@@ -137,54 +137,6 @@ hr{ border-top-color:#dadada;}
 }
 #user-nav > ul ul > li > a:hover {
 }
-
-/* Top menu navigation */
-#menu-nav {
-	position: absolute;
-	left: 220px;
-	top:0px;
-	z-index: 20;
-	margin: 0;
-}
-#menu-nav > ul {
-	margin: 0;
-	padding: 0;
-	list-style: none; border-right: 1px solid #2e363f;border-left: 1px solid #000;
-}
-#menu-nav > ul > li {
-	float: left;
-	list-style-type: none;
-	margin: 0;
-	position: relative;
-	padding: 0; border-left: 1px solid #2e363f; border-right: 1px solid #000;
-}
-#menu-nav > ul > li > a {
-	padding:9px 10px;
-	display: block;
-	font-size: 11px;
-}
-#menu-nav > ul > li > a:hover, #menu-nav > ul > li.open > a {
-	color: #ffffff;  background:#000;
-}
-#menu-nav > ul > li > a > i, #sidebar li a i {
-	opacity: .5; 
-	margin-top: 2px;
-}
-#menu-nav > ul > li > a:hover > i, #menu-nav > ul > li.open > a > i {
-	opacity: 1;
-}
-#menu-nav > ul > li > a > .label {
-	vertical-align: middle;
-	padding: 1px 4px 1px;
-	margin: -2px 4px 0;
-	display: inline-block;
-}
-#menu-nav > ul ul > li > a {
-	text-align: left;
-}
-#menu-nav > ul ul > li > a:hover {
-}
-
 /* Sidebar Navigation */
 #sidebar {
 	display: block;
